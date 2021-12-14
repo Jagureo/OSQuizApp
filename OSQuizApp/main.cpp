@@ -31,13 +31,13 @@ Question AllQuestions[] =
     {"Which of the following statements is false regarding system calls?",
         "None of the others", "A number associated with each system call", "Typically written in a high-level language (C/C++) or in Assembly", "Usually accessed by user program via system call interface"},
     {"Which of the following components run in kernel mode for a microkernel design",
-        "None of the others", "Device driver", "Filesystem driver", "Interprocess communication"},
+        "Interprocess communication", "None of the others", "Device driver", "Filesystem driver"},
     {"Hotmail and Outlook are examples of",
         "Software-as-a-service", "Information-as-a-service", "Platform-as-a-service", "Desktop-as-a-service"},
     {"Which of the following are false regarding hard disk drives?",
-        "The head is connected to an arm, which is moved by an actuator", "Movement of the arm is not done using motor, instead of a heat coil", "Read/Write performed by a head on a platter", "Stores data on a rotating platter(s) within the disk body"},
+        "Movement of the arm is not done using motor, instead of a heat coil", "The head is connected to an arm, which is moved by an actuator", "Read/Write performed by a head on a platter", "Stores data on a rotating platter(s) within the disk body"},
     {"The act of moving a process in and out of main memory is called",
-        "Caching", "Swapping", "Virtualizing", "Scheduling"},
+        "Swapping", "Caching", "Virtualizing", "Scheduling"},
 
     // QUIZ 2
     {"Consider the following set of processes P1, P2, P3 and P4.\n Assume that the processes arrive at the same time.\n"
@@ -67,7 +67,7 @@ Question AllQuestions[] =
     {"Which of the following is not a process state?",
         "All of the others are valid process states", "New", "Terminated", "Running"},
     {"If a parent process terminates without invoking wait(), its child process shall become ____ process",
-        "Zombie", "Orpaned", "Idle", "Redundant"},
+        "Zombie", "Orphaned", "Idle", "Redundant"},
     {"Of the following, which is not a section of a process in memory?",
         "Code", "Heap", "Text", "Stack"},
     {"Consider the following set of processes P1, P2, P3 and P4.\n Assume that the processes arrive at the same time.\n"
