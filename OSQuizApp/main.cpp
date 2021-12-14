@@ -67,7 +67,7 @@ Question AllQuestions[] =
     {"Which of the following is not a process state?",
         "All of the others are valid process states", "New", "Terminated", "Running"},
     {"If a parent process terminates without invoking wait(), its child process shall become ____ process",
-        "Zombie", "Orphaned", "Idle", "Redundant"},
+        "Orphaned", "Zombie", "Idle", "Redundant"},
     {"Of the following, which is not a section of a process in memory?",
         "Code", "Heap", "Text", "Stack"},
     {"Consider the following set of processes P1, P2, P3 and P4.\n Assume that the processes arrive at the same time.\n"
@@ -186,6 +186,8 @@ Question AllQuestions[] =
         "Contiguous Access", "Direct Access", "Sequential Access", "Indexed Sequential Access"},
     {"In the 10-bit Unix access permission bits, what does the least significant bit represent? (bit 0)",
         "Execute permission for Public", "Execute permission for Group", "Execute permission for Owner", "If the file is a directory or not"},
+    { "In the 10-bit Unix access permission bits, what does the most significant bit represent? (bit 9)",
+        "If the file is a directory or not", "Execute permission for Public", "Execute permission for Group", "Execute permission for Owner" },
     {"Which of the following is NOT a file allocation method?",
         "FCFS", "Indexed", "Contiguous", "Linked"},
     {"In POSIX library semaphores, which function is called to create a semaphore?",
@@ -195,7 +197,7 @@ Question AllQuestions[] =
     {"In System V library, what function is used to link a shared memory in kernel to a local variable in the user space?",
         "shmat", "ftok", "shmget", "shmdt"},
     { "How many times will the word \"Indonesia\" get printed when you run the program?\n"
-     "--------------------------------\n"
+     " --------------------------------\n"
      " | int pid;                     |\n"
      " | pid = fork();                |\n"
      " | pid = fork();                |\n"
@@ -230,7 +232,38 @@ Question AllQuestions[] =
      " |                      V             V                 |\n"
      " | [trap to operating system, illegal addressing error] |\n"
      " --------------------------------------------------------",
-        "<", ">=", "==", ">" }
+        "<", ">=", "==", ">" },
+    {"Hardware that maps a logical address in the program to physical address during runtime is",
+        "Memory Management Unit", "Compiler", "Device Driver", "Hardware Acceleration Unit"},
+    {"Disk Scheduling, where the head moves from one end of the disk to another and then circles back to the beginning is",
+        "C-SCAN", "SCAN", "FCFS", "Linear Scheduling"},
+    { "Consider the following two programs and assume fork() never fails.\n"
+     " -------------------------------------------------\n"
+     " | Program - P1           | Program - P2         |\n"
+     " -------------------------------------------------\n"
+     " |                        | fork();              |\n"
+     " | fork();                | printf(\"Cake\\n\");    |\n"
+     " | fork();                | fork();              |\n"
+     " | fork();                | printf(\"Cake\\n\");    |\n"
+     " | printf(\"Cake\\n\");      | fork();              |\n"
+     " |                        | printf(\"Cake\\n\");    |\n"
+     " ----------------------------------------------------\n"
+     " Which of the following statements are true?",
+        "P2 prints Cake 14 times", "P1 prints Cake 6 times", "P1 and P2 create different number of processes", "P1 prints Cake 3 times" },
+
+    // Quiz 8
+    {"Which of the following are maskable interrupt numbers",
+        "88", "1", "11", "21"},
+    {"Boot code can be found on",
+        "MBR", "MSR", "NVR", "NVM"},
+    {"Busy waiting for an I/O device is called",
+        "Polling", "Wait and Signal", "Semaphores", "Interrupt driven process"},
+    {"What is DMA?",
+        "Direct Memory Access", "Direct Memory Available", "Disk Management Arbitrary", "Disk Memory Access"},
+    {"Dining Philosophers problem is",
+        "a synchronisation problem", "a storage problem", "a philosophical problem", "a memory management problem"},
+    {"RAID-1 does",
+        "mirrored disks", "interleaved parity", "multi-dimensional striping", "non-redundant stripping"}
 };
 
 std::chrono::time_point<std::chrono::system_clock> start;
